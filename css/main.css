@@ -1,5 +1,6 @@
 ul {
   list-style: none;
+  padding: 0;
 }
 
 img {
@@ -92,7 +93,7 @@ p {
 .hero {
   min-width: 320px;
   min-height: 400px;
-  margin: 0 auto 60px;
+  margin: 0 auto;
   background-image: url("../images/hero/hero_M.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,10 +178,12 @@ p {
 
 .advantages__list {
   margin: 0;
-  padding: 0;
+  padding-top: 60px;
+  width: 100%;
 }
 
 .advantages__item:not(:last-child) {
+  width: 100%;
   margin-bottom: 30px;
 }
 
