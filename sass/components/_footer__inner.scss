@@ -1,0 +1,15 @@
+.footer__inner {
+  padding: 60px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 67px;
+  }
+}
+
+.footer__inner-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+}

@@ -1,0 +1,16 @@
+.footer__socials-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socials-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__socials-icon {
+  fill: #ffffff;
+}
