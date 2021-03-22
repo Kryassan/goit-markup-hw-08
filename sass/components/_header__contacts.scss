@@ -1,0 +1,24 @@
+@media screen and (max-width: 767px) {
+  .header__contacts {
+    margin-bottom: 64px;
+  }
+  .header__phone {
+    display: block;
+    margin-bottom: 32px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+  .header__email {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $text-color;
+  }
+}

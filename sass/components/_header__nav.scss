@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px) {
+  .header__nav {
+    margin-bottom: 302px;
+  }
+  .header__nav-link {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+
+  .header__nav-link:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}

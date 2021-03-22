@@ -2,9 +2,14 @@
 @import "./utils/vars";
 @import "./components/body";
 @import "./components/container";
+@import "./components/header";
 @import "./components/header__inner";
 @import "./components/header__logo";
 @import "./components/header__burger";
+@import "./components/header__menu";
+@import "./components/header__nav";
+@import "./components/header__contacts";
+@import "./components/header__socials";
 @import "./components/hero";
 @import "./components/_advantages__inner";
 @import "./components/_advantages__list";
@@ -16,7 +21,6 @@
 @import "./components/presentations__inner";
 @import "./components/presentations__title";
 @import "./components/presentations__list";
-@import "./components/presentations__item";
 @import "./components/presentations__banner";
 @import "./components/team";
 @import "./components/team_inner";
@@ -27,7 +31,6 @@
 @import "./components/team__name";
 @import "./components/team__position";
 @import "./components/team__socials";
-@import "./components/team__socials-item";
 @import "./components/clients__inner";
 @import "./components/clients__title";
 @import "./components/clients__list";

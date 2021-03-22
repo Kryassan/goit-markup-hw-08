@@ -4,6 +4,10 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -50,6 +54,12 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    position: relative;
+  }
+}
+
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,6 +102,87 @@ p {
 @media screen and (min-width: 768px) {
   .header__burger {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 48px 10px 48px 40px;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav {
+    margin-bottom: 302px;
+  }
+  .header__nav-link {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .header__nav-link:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__contacts {
+    margin-bottom: 64px;
+  }
+  .header__phone {
+    display: block;
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .header__email {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__socials-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .header__socials-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .header__socials-item:not(:last-child)::after {
+    content: "";
+    width: 22px;
+    height: 0px;
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 
