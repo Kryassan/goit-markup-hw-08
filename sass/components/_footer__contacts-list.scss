@@ -4,6 +4,10 @@
 
 .footer__contacts-item:not(:last-child) {
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__contacts-text {
@@ -15,4 +19,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }

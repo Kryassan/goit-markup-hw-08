@@ -4,12 +4,10 @@
   @media screen and (min-width: 768px) {
     padding: 60px 67px;
   }
-}
 
-.footer__inner-box {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
+    padding: 60px 0;
     justify-content: space-between;
-    margin-bottom: 60px;
   }
 }

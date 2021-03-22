@@ -1,16 +1,16 @@
-.footer__address {
-  margin: 0 auto 8px;
+.footer__form-title {
+  margin-bottom: 20px;
 
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #ffffff;
 
   @media screen and (min-width: 1200px) {
-    margin: 0 auto 9;
     text-align: start;
   }
 }
