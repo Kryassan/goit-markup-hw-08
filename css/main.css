@@ -106,7 +106,28 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  .header__burger {
+    display: block;
+  }
+  .header__burger,
+  .icon__burger-close {
+    border: none;
+    background-color: transparent;
+  }
+  .header__burger .icon__burger-close {
+    display: none;
+  }
+  .header__burger.is-open .icon__burger-close {
+    display: block;
+  }
+  .header__burger.is-open .icon__burger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .header__menu {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -114,14 +135,19 @@ p {
     padding: 48px 10px 48px 40px;
     background-color: #fff;
   }
+  .is-open {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .header__nav {
     margin-bottom: 302px;
   }
+  .header__nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
   .header__nav-link {
-    display: block;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -129,18 +155,16 @@ p {
     letter-spacing: 0.02em;
     color: #212121;
   }
-  .header__nav-link:not(:last-child) {
-    margin-bottom: 32px;
-  }
 }
 
 @media screen and (max-width: 767px) {
-  .header__contacts {
+  .header__contacts-list {
     margin-bottom: 64px;
   }
-  .header__phone {
-    display: block;
+  .header__contacts-item:not(:last-child) {
     margin-bottom: 32px;
+  }
+  .header__contacts-phone {
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
@@ -148,7 +172,7 @@ p {
     letter-spacing: 0.02em;
     color: #2196f3;
   }
-  .header__email {
+  .header__contacts-email {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;

@@ -1,11 +1,11 @@
 @media screen and (max-width: 767px) {
-  .header__contacts {
+  .header__contacts-list {
     margin-bottom: 64px;
   }
-  .header__phone {
-    display: block;
+  .header__contacts-item:not(:last-child) {
     margin-bottom: 32px;
-
+  }
+  .header__contacts-phone {
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
@@ -13,7 +13,7 @@
     letter-spacing: 0.02em;
     color: $accent-color;
   }
-  .header__email {
+  .header__contacts-email {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;

@@ -3,3 +3,23 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .header__burger {
+    display: block;
+  }
+  .header__burger,
+  .icon__burger-close {
+    border: none;
+    background-color: transparent;
+  }
+  .header__burger .icon__burger-close {
+    display: none;
+  }
+  .header__burger.is-open .icon__burger-close {
+    display: block;
+  }
+  .header__burger.is-open .icon__burger {
+    display: none;
+  }
+}
