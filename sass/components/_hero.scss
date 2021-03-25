@@ -1,8 +1,9 @@
 .hero {
+  position: relative;
   min-width: 320px;
   min-height: 400px;
   margin: 0 auto;
-  background-image: url("../images/hero/hero_M.jpg");
+  background-image: url("../../images/hero/hero_M.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(47, 48, 58, 0.4);

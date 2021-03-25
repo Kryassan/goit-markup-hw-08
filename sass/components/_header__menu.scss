@@ -7,8 +7,25 @@
     width: 100%;
     padding: 48px 10px 48px 40px;
     background-color: #fff;
+
+    &.is-open {
+      display: block;
+    }
   }
-  &.is-open {
-    display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: flex;
+    width: 516px;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    width: 906px;
   }
 }

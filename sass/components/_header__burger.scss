@@ -1,9 +1,3 @@
-@media screen and (min-width: 768px) {
-  .header__burger {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .header__burger {
     display: block;
@@ -20,6 +14,12 @@
     display: block;
   }
   .header__burger.is-open .icon__burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__burger {
     display: none;
   }
 }
