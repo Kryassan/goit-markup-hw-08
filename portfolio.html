@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="en">Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" lang="en" href="./index.html">Web<span class="logo-black">Studio</span></a>
+        
+                <button class="header__burger is-open" type="button" aria-label="Мобильное меню" aria-expanded="true" aria-controls="header__menu" data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon__burger" href="./images/sprite.svg#burger"></use>
+                        <use class="icon__burger-close" href="./images/sprite.svg#burger-close"></use>
+                    </svg>
+                </button>
+        
+                <!-- <div class="header__menu is-open" id="header__menu" data-menu>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="./index.html">Студия</a>
+                            </li>
+        
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Портфолио</a>
+                            </li>
+        
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <ul class="header__contacts-list">
+                        <li class="header__contacts-item">
+                            <svg class="header__contacts-icon" width="10" height="14">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>
+                            <a class="header__contacts-phone" href="#">+38 096 111 11 11</a>
+                        </li>
+        
+                        <li class="header__contacts-item">
+                            <svg class="header__contacts-icon" width="14" height="10">
+                                <use href="./images/sprite.svg#email"></use>
+                            </svg>
+                            <a class="header__contacts-email" href="#">info@devstudio.com</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="header__socials">
+                        <li class="header__socials-item">
+                            <a class="header__socials-link" href="#">Instagram</a>
+                        </li>
+        
+                        <li class="header__socials-item">
+                            <a class="header__socials-link" href="#">Twitter</a>
+                        </li>
+        
+                        <li class="header__socials-item">
+                            <a class="header__socials-link" href="#">Facebook</a>
+                        </li>
+        
+                        <li class="header__socials-item">
+                            <a class="header__socials-link" href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="container">
+                <div class="filters__inner">
+                    <ul class="filters__list">
+                        <li class="filters__item">
+                            <a class="filters__link">Все</a>
+                        </li>
+
+                        <li class="filters__item">
+                            <a class="filters__link">Веб-сайты</a>
+                        </li>
+
+                        <li class="filters__item">
+                            <a class="filters__link">Приложения</a>
+                        </li>
+
+                        <li class="filters__item">
+                            <a class="filters__link">Дизайн</a>
+                        </li>
+
+                        <li class="filters__item">
+                            <a class="filters__link">Маркетинг</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="projects__inner">
+                    <ul class="projects__list">
+                        <li class="projects__item">
+                            <picture class="projects__picture">
+                                <source 
+                                    srcset="./images/projects/desktop/img_1.webp 1x, ./images/projects/desktop/img_1@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/desktop/img_1.jpg 1x, ./images/projects/desktop/img_1@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_1.webp 1x, ./images/projects/tablet/img_1@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_1.jpg 1x, ./images/projects/tablet/img_1@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/mobile/img_1.webp 1x, ./images/projects/mobile/img_1@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img 
+                                    srcset="./images/projects/mobile/img_1.jpg 1x, ./images/projects/mobile/img_1@2x.jpg 2x" 
+                                    src="./images/projects/mobile/img_1.jpg"
+                                    alt="Проект_1" width="450">
+                            </picture>
+                                <p class="projects__name">Технокряк</p>
+                                <p class="projects__type">Веб-сайт</p>
+                        </li>
+
+                        
+                        <li class="projects__item">
+                            <picture class="projects__picture">
+                                <source 
+                                    srcset="./images/projects/desktop/img_2.webp 1x, ./images/projects/desktop/img_2@2x.webp 2x"
+                                    type="image/webp" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/desktop/img_2.jpg 1x, ./images/projects/desktop/img_2@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_2.webp 1x, ./images/projects/tablet/img_2@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_2.jpg 1x, ./images/projects/tablet/img_2@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/mobile/img_2.webp 1x, ./images/projects/mobile/img_2@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img 
+                                    srcset="./images/projects/mobile/img_2.jpg 1x, ./images/projects/mobile/img_2@2x.jpg 2x"
+                                    src="./images/projects/mobile/img_2.jpg" 
+                                    alt="Проект_2" 
+                                    width="450">
+                            </picture>
+                                <p class="projects__name">Постер New Orlean vs Golden Star</p>
+                                <p class="projects__type">Дизайн</p>
+                        </li>
+
+                        <li class="projects__item">
+                            <picture class="projects__picture">
+                                <source 
+                                    srcset="./images/projects/desktop/img_3.webp 1x, ./images/projects/desktop/img_3@2x.webp 2x"
+                                    type="image/webp" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/desktop/img_3.jpg 1x, ./images/projects/desktop/img_3@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/projects/tablet/img_3.webp 1x, ./images/projects/tablet/img_3@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_3.jpg 1x, ./images/projects/tablet/img_3@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 768px)">
+                                <source     
+                                    srcset="./images/projects/mobile/img_3.webp 1x, ./images/projects/mobile/img_3@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img 
+                                    srcset="./images/projects/mobile/img_3.jpg 1x, ./images/projects/mobile/img_3@2x.jpg 2x"
+                                    src="./images/projects/mobile/img_3.jpg" 
+                                    alt="Проект_3" 
+                                    width="450">
+                            </picture>
+                                <p class="projects__name">Ресторан Seafood</p>
+                                <p class="projects__type">Приложение</p>
+                        </li>
+
+                        <li class="projects__item">
+                            <picture class="projects__picture">
+                                <source 
+                                    srcset="./images/projects/desktop/img_4.webp 1x, ./images/projects/desktop/img_4@2x.webp 2x"
+                                    type="image/webp" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/desktop/img_4.jpg 1x, ./images/projects/desktop/img_4@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_4.webp 1x, ./images/projects/tablet/img_4@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_4.jpg 1x, ./images/projects/tablet/img_4@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/mobile/img_4.webp 1x, ./images/projects/mobile/img_4@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img 
+                                    srcset="./images/projects/mobile/img_4.jpg 1x, ./images/projects/mobile/img_4@2x.jpg 2x"
+                                    src="./images/projects/mobile/img_4.jpg" 
+                                    alt="Проект_4" 
+                                    width="450">
+                            </picture>
+                                <p class="projects__name">Проект Prime</p>
+                                <p class="projects__type">Маркетинг</p>
+                        </li>
+
+                        <li class="projects__item">
+                            <picture class="projects__picture">
+                                <source 
+                                    srcset="./images/projects/desktop/img_5.webp 1x, ./images/projects/desktop/img_5@2x.webp 2x"
+                                    type="image/webp" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/desktop/img_5.jpg 1x, ./images/projects/desktop/img_5@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_5.webp 1x, ./images/projects/tablet/img_5@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_5.jpg 1x, ./images/projects/tablet/img_5@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/mobile/img_5.webp 1x, ./images/projects/mobile/img_5@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img 
+                                    srcset="./images/projects/mobile/img_5.jpg 1x, ./images/projects/mobile/img_5@2x.jpg 2x"
+                                    src="./images/projects/mobile/img_5.jpg" 
+                                    alt="Проект_5" 
+                                    width="450">
+                            </picture>
+                                <p class="projects__name">Проект Boxes</p>
+                                <p class="projects__type">Приложение</p>
+                        </li>
+
+                        <li class="projects__item">
+                            <picture class="projects__picture">
+                                <source 
+                                    srcset="./images/projects/desktop/img_6.webp 1x, ./images/projects/desktop/img_6@2x.webp 2x"
+                                    type="image/webp" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/desktop/img_6.jpg 1x, ./images/projects/desktop/img_6@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_6.webp 1x, ./images/projects/tablet/img_6@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_6.jpg 1x, ./images/projects/tablet/img_6@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/mobile/img_6.webp 1x, ./images/projects/mobile/img_6@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img 
+                                    srcset="./images/projects/mobile/img_6.jpg 1x, ./images/projects/mobile/img_6@2x.jpg 2x"
+                                    src="./images/projects/mobile/img_6.jpg" 
+                                    alt="Проект_6" 
+                                    width="450">
+                            </picture>
+                                <p class="projects__name">Inspiration has no Borders</p>
+                                <p class="projects__type">Веб-сайт</p>
+                        </li>
+
+                        <li class="projects__item">
+                            <picture class="projects__picture">
+                                <source 
+                                    srcset="./images/projects/desktop/img_7.webp 1x, ./images/projects/desktop/img_7@2x.webp 2x"
+                                    type="image/webp" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/desktop/img_7.jpg 1x, ./images/projects/desktop/img_7@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_7.webp 1x, ./images/projects/tablet/img_7@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_7.jpg 1x, ./images/projects/tablet/img_7@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/mobile/img_7.webp 1x, ./images/projects/mobile/img_7@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img 
+                                    srcset="./images/projects/mobile/img_7.jpg 1x, ./images/projects/mobile/img_7@2x.jpg 2x"
+                                    src="./images/projects/mobile/img_7.jpg" 
+                                    alt="Проект_7" 
+                                    width="450">
+                            </picture>
+                                <p class="projects__name">Издание Limited Edition</p>
+                                <p class="projects__type">Дизайн</p>
+                        </li>
+
+                        <li class="projects__item">
+                            <picture class="projects__picture">
+                                <source 
+                                    srcset="./images/projects/desktop/img_8.webp 1x, ./images/projects/desktop/img_8@2x.webp 2x"
+                                    type="image/webp" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/desktop/img_8.jpg 1x, ./images/projects/desktop/img_8@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_8.webp 1x, ./images/projects/tablet/img_8@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_8.jpg 1x, ./images/projects/tablet/img_8@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/mobile/img_8.webp 1x, ./images/projects/mobile/img_8@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img 
+                                    srcset="./images/projects/mobile/img_8.jpg 1x, ./images/projects/mobile/img_8@2x.jpg 2x"
+                                    src="./images/projects/mobile/img_8.jpg" 
+                                    alt="Проект_8" 
+                                    width="450">
+                            </picture>
+                                <p class="projects__name">Проект LAB</p>
+                                <p class="projects__type">Маркетинг</p>
+                        </li>
+
+                        <li class="projects__item">
+                            <picture class="projects__picture">
+                                <source 
+                                    srcset="./images/projects/desktop/img_9.webp 1x, ./images/projects/desktop/img_9@2x.webp 2x"
+                                    type="image/webp" 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/desktop/img_9.jpg 1x, ./images/projects/desktop/img_9@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_9.webp 1x, ./images/projects/tablet/img_9@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/tablet/img_9.jpg 1x, ./images/projects/tablet/img_9@2x.jpg 2x" 
+                                    type="image/jpeg"
+                                    media="(min-width: 768px)">
+                                <source 
+                                    srcset="./images/projects/mobile/img_9.webp 1x, ./images/projects/mobile/img_9@2x.webp 2x" 
+                                    type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img 
+                                    srcset="./images/projects/mobile/img_9.jpg 1x, ./images/projects/mobile/img_9@2x.jpg 2x"
+                                    src="./images/projects/mobile/img_9.jpg" 
+                                    alt="Проект_9" 
+                                    width="450">
+                            </picture>
+                                <p class="projects__name">Growing Business</p>
+                                <p class="projects__type">Приложение</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

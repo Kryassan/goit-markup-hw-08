@@ -58,6 +58,11 @@ p {
   .header {
     position: relative;
   }
+  .header::after {
+    content: " ";
+    display: block;
+    border: 1px solid #ececec;
+  }
 }
 
 .header__inner {
@@ -273,6 +278,11 @@ p {
   .header__contacts-icon {
     margin-right: 10px;
   }
+  .header__contacts-phone,
+  .header__contacts-email {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -402,11 +412,16 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  padding: 40px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 479px) {
+  .modal__menu {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -419,6 +434,31 @@ p {
   .modal__menu {
     width: 528px;
   }
+}
+
+.modal__inner {
+  position: relative;
+  padding: 40px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .modal__title {
@@ -532,6 +572,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -591,6 +632,7 @@ p {
   background-color: #188ce8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

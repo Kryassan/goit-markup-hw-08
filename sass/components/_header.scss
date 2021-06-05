@@ -1,5 +1,11 @@
 @media screen and (max-width: 767px) {
   .header {
     position: relative;
+
+    &::after {
+      content: " ";
+      display: block;
+      border: 1px solid #ececec;
+    }
   }
 }

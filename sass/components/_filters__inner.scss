@@ -1,0 +1,10 @@
+.filters__inner {
+  padding: 60px 88px 40px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 63px 30px 63px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 94px 279px 50px 279px;
+  }
+}
