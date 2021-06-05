@@ -6,13 +6,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages__item {
-    width: calc((100% - 1 * 30px) / 2);
-  }
-  .advantages__item:nth-child(odd) {
-    margin-right: 30px;
-  }
-  .advantages__item:nth-child(-n + 2) {
-    margin-bottom: 30px;
+    flex-basis: calc((100% / 2) - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
