@@ -1,11 +1,3 @@
-.clients__item {
-  position: relative;
-  width: 210px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .clients__item {
     margin-right: auto;
@@ -16,9 +8,14 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__item {
     flex-basis: calc((100% / 2) - 34px);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .clients__item {
     margin-top: 30px;
     margin-left: 30px;
   }
@@ -27,11 +24,5 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
     flex-basis: calc((100% / 3) - 36px);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
