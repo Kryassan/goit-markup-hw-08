@@ -398,6 +398,7 @@ p {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
+  cursor: pointer;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -925,14 +926,37 @@ p {
   margin: 0 auto;
 }
 
-.team__socials-item {
+.team__socials-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
+  border-radius: 50%;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.team__socials-link:hover, .team__socials-link:focus {
+  background-color: #2196f3;
 }
 
 .team__socials-icon {
   fill: #afb1b8;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__socials-link:hover .team__socials-icon,
+.team__socials-link:focus .team__socials-icon {
+  fill: #ffffff;
 }
 
 .clients__inner {
@@ -1136,6 +1160,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: #2196f3;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1148,7 +1173,8 @@ p {
   color: #ffffff;
 }
 
-.footer__address {
+.footer__address-link {
+  display: block;
   margin: 0 auto 8px;
   font-style: normal;
   font-weight: normal;
@@ -1160,7 +1186,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer__address {
+  .footer__address-link {
     margin: 0 auto 9;
     text-align: start;
   }
@@ -1241,12 +1267,27 @@ p {
           justify-content: space-between;
 }
 
-.footer__socials-item {
+.footer__socials-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.footer__socials-link:hover, .footer__socials-link:focus {
+  background-color: #2196f3;
 }
 
 .footer__socials-icon {
@@ -1342,6 +1383,7 @@ p {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

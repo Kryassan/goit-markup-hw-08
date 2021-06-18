@@ -6,12 +6,28 @@
   margin: 0 auto;
 }
 
-.team__socials-item {
+.team__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
+  border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .team__socials-icon {
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .team__socials-link:hover &,
+  .team__socials-link:focus & {
+    fill: #ffffff;
+  }
 }
