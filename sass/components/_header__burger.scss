@@ -1,12 +1,16 @@
 @media screen and (max-width: 767px) {
   .header__burger {
     display: block;
-  }
-  .header__burger,
-  .icon__burger-close {
     border: none;
     background-color: transparent;
+    z-index: 3;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
+
   .header__burger .icon__burger-close {
     display: none;
   }

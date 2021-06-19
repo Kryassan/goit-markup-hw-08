@@ -17,65 +17,69 @@
         <div class="container">
             <div class="header__inner">
                 <a class="header__logo" lang="en" href="./index.html">Web<span class="logo-black">Studio</span></a>
-        
-                <button class="header__burger is-open" type="button" aria-label="Мобильное меню" aria-expanded="true" aria-controls="header__menu" data-menu-button>
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use class="icon__burger" href="./images/sprite.svg#burger"></use>
-                        <use class="icon__burger-close" href="./images/sprite.svg#burger-close"></use>
-                    </svg>
-                </button>
-        
-                <!-- <div class="header__menu is-open" id="header__menu" data-menu>
+                <div class="header__menu is-open" id="header__menu" data-menu>
                     <nav class="header__nav">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
                                 <a class="header__nav-link" href="./index.html">Студия</a>
                             </li>
-        
+                
                             <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Портфолио</a>
+                                <a class="header__nav-link--active" href="#">Портфолио</a>
                             </li>
-        
+                
                             <li class="header__nav-item">
                                 <a class="header__nav-link" href="#">Контакты</a>
                             </li>
                         </ul>
                     </nav>
-        
+                
                     <ul class="header__contacts-list">
                         <li class="header__contacts-item">
-                            <svg class="header__contacts-icon" width="10" height="14">
-                                <use href="./images/sprite.svg#phone"></use>
-                            </svg>
-                            <a class="header__contacts-phone" href="#">+38 096 111 11 11</a>
+                            <a class="header__contacts-phone" href="#">
+                                <svg class="header__contacts-icon" width="10" height="14">
+                                    <use href="./images/sprite.svg#phone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
                         </li>
-        
+                
                         <li class="header__contacts-item">
-                            <svg class="header__contacts-icon" width="14" height="10">
-                                <use href="./images/sprite.svg#email"></use>
-                            </svg>
-                            <a class="header__contacts-email" href="#">info@devstudio.com</a>
+                            <a class="header__contacts-email" href="#">
+                                <svg class="header__contacts-icon" width="14" height="10">
+                                    <use href="./images/sprite.svg#email"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
                         </li>
                     </ul>
-        
+                
                     <ul class="header__socials">
                         <li class="header__socials-item">
                             <a class="header__socials-link" href="#">Instagram</a>
                         </li>
-        
+                
                         <li class="header__socials-item">
                             <a class="header__socials-link" href="#">Twitter</a>
                         </li>
-        
+                
                         <li class="header__socials-item">
                             <a class="header__socials-link" href="#">Facebook</a>
                         </li>
-        
+                
                         <li class="header__socials-item">
                             <a class="header__socials-link" href="#">LinkedIn</a>
                         </li>
                     </ul>
-                </div> -->
+                </div>
+                
+                <button class="header__burger is-open" type="button" aria-label="Мобильное меню" aria-expanded="true"
+                    aria-controls="header__menu" data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon__burger" href="./images/sprite.svg#burger"></use>
+                        <use class="icon__burger-close" href="./images/sprite.svg#burger-close"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -561,6 +565,7 @@
             </div>
         </div>
     </footer>
-    
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

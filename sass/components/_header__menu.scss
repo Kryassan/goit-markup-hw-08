@@ -2,11 +2,12 @@
   .header__menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
-    padding: 48px 10px 48px 40px;
+    padding: 48px 83px 48px 40px;
     background-color: #fff;
+    z-index: 2;
 
     &.is-open {
       display: block;
@@ -17,7 +18,7 @@
 @media screen and (min-width: 768px) {
   .header__menu {
     display: flex;
-    width: 516px;
+    min-width: 516px;
     justify-content: space-between;
     padding: 0;
     align-items: center;
@@ -26,6 +27,6 @@
 
 @media screen and (min-width: 1200px) {
   .header__menu {
-    width: 906px;
+    min-width: 906px;
   }
 }

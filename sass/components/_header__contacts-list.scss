@@ -49,6 +49,15 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: $text-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    &:hover .header__contacts-icon,
+    &:focus .header__contacts-icon {
+      fill: $accent-color;
+    }
   }
 }
 
