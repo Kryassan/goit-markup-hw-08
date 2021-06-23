@@ -498,6 +498,21 @@ p {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal__inner {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__inner {
+    width: 528px;
+  }
+}
+
 .modal__close {
   position: absolute;
   top: 8px;
@@ -659,6 +674,9 @@ p {
   .form__conditions {
     font-size: 14px;
     line-height: 1.71;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -1209,6 +1227,7 @@ p {
   margin-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1220,6 +1239,7 @@ p {
 @media screen and (min-width: 1200px) {
   .footer__contacts {
     width: 231px;
+    text-align: justify;
   }
 }
 
