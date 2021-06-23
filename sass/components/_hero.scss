@@ -1,5 +1,4 @@
 .hero {
-  position: relative;
   min-width: 320px;
   min-height: 400px;
   margin: 0 auto;
@@ -78,6 +77,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 
   font-style: normal;
@@ -85,4 +85,9 @@
   font-size: 16px;
   line-height: 1.9;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

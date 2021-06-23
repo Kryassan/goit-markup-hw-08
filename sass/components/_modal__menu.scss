@@ -1,183 +1,64 @@
 .modal__menu {
+  display: block;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0px;
+  top: 0px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
+
   width: 100%;
-  z-index: 6;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 
-  background-color: ;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  // visibility: hidden;
+  z-index: 5;
 
-  @media screen and (max-width: 479px) {
-    width: 100%;
+  &.is-hidden .modal__inner {
+    transform: translate(-50%, -50%) scale(0);
   }
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 528px;
+  &.is-hidden {
+    pointer-events: none;
   }
 }
 
 .modal__inner {
-  position: relative;
+  display: inline-block;
+  position: absolute;
+  top: 93px;
+  left: 15px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
+  transform: scale(1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
+
   width: 30px;
   height: 30px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  border-radius: 50%;
   cursor: pointer;
-}
-
-.modal__title {
-  margin-bottom: 12px;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $title-color;
-
-  @media screen and (min-width: 1200px) {
-    line-height: 1.15;
-  }
-}
-
-.modal__label {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: $text-color;
-}
-
-.modal__input-area {
-  position: relative;
-  display: block;
-  margin-top: 4px;
-  margin-bottom: 10px;
-}
-
-.modal__input {
-  display: block;
-  width: 100%;
-  height: 40px;
-  padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.modal__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__textarea {
-  display: block;
-  width: 100%;
-  height: 120px;
-  margin-top: 4px;
-  margin-bottom: 20px;
-  padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  resize: none;
-
-  &::placeholder {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+.modal__close-icon {
+  .modal__close:hover &,
+  .modal__close:focus & {
+    fill: $accent-color;
   }
-}
-
-.modal__conditions {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-
-  align-items: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: $text-color;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-}
-
-.modal__checkbox {
-  appearance: none;
-}
-
-.modal__checkbox-icon {
-  display: block;
-  width: 16px;
-  height: 15px;
-  // margin-right: 8px;
-  border: 2px solid $title-color;
-  border-radius: 2px;
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 7px;
-  }
-}
-
-.modal__checkbox:checked + .modal__checkbox-icon {
-  background-color: #2196f3;
-  background-image: url("../../images/icon check.svg");
-  background-size: contain;
-  background-origin: border-box;
-  border: solid #2196f3;
-}
-
-.modal__link {
-  color: $accent-color;
-  text-decoration: underline;
-}
-
-.modal__button {
-  display: block;
-  width: 200px;
-  height: 50px;
-  margin: 31px auto 0 auto;
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
 }
