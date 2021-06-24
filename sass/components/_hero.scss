@@ -42,14 +42,14 @@
   .hero {
     width: 100%;
     min-height: 600px;
-    background-image: url("../../images/hero/hero_D.webp"),
-      url("../../images/hero/hero_D.jpg");
+    background-image: url("../images/hero/hero_D.webp"),
+      url("../images/hero/hero_D.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url("../../images/hero/hero_D@2x.webp"),
-        url("../../images/hero/hero_D@2x.jpg");
+      background-image: url("../images/hero/hero_D@2x.webp"),
+        url("../images/hero/hero_D@2x.jpg");
     }
   }
 }
