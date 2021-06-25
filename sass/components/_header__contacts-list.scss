@@ -1,28 +1,6 @@
 @media screen and (max-width: 767px) {
   .header__contacts-list {
-    margin-bottom: 64px;
-  }
-  .header__contacts-item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-  .header__contacts-icon {
     display: none;
-  }
-  .header__contacts-phone {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: $accent-color;
-  }
-  .header__contacts-email {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: $text-color;
   }
 }
 

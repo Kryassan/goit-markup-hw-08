@@ -1,14 +1,6 @@
 @media screen and (max-width: 767px) {
-  .header__nav {
-    margin-bottom: 302px;
-  }
-  .header__nav-item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-  .header__nav-link,
-  .header__nav-link--active {
-    font-size: 40px;
-    line-height: 1.18;
+  .header__nav-list {
+    display: none;
   }
 }
 

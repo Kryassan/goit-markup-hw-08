@@ -1,28 +1,12 @@
-@media screen and (max-width: 767px) {
-  .header__menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 48px 83px 48px 40px;
-    background-color: #fff;
-    z-index: 2;
-
-    &.is-open {
-      display: block;
-    }
-  }
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .header__menu {
-    display: flex;
     min-width: 516px;
-    justify-content: space-between;
-    padding: 0;
-    align-items: center;
   }
 }
 

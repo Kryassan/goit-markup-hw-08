@@ -3,22 +3,11 @@
     display: block;
     border: none;
     background-color: transparent;
-    z-index: 3;
 
     &:hover,
     &:focus {
       fill: $accent-color;
     }
-  }
-
-  .header__burger .icon__burger-close {
-    display: none;
-  }
-  .header__burger.is-open .icon__burger-close {
-    display: block;
-  }
-  .header__burger.is-open .icon__burger {
-    display: none;
   }
 }
 
