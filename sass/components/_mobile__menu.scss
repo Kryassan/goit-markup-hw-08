@@ -6,10 +6,18 @@
     width: 100%;
     height: 100vh;
     overflow: scroll;
+    visibility: hidden;
+    pointer-events: none;
 
     padding: 48px 83px 48px 40px;
     background-color: #fff;
-    // z-index: 2;
+    z-index: 2;
+
+    &.is-open {
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(0);
+    }
   }
   @media screen and (min-width: 768px) {
     display: none;
