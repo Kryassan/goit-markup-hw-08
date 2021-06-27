@@ -505,7 +505,7 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 15px;
+    margin: -15px;
   }
 }
 
