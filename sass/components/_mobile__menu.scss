@@ -5,11 +5,14 @@
     left: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     overflow: scroll;
     visibility: hidden;
     pointer-events: none;
 
-    padding: 48px 83px 48px 40px;
+    padding: 48px 15px 48px 40px;
     background-color: #fff;
     z-index: 2;
 
@@ -22,10 +25,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
-
-.mobile__nav-list {
-  margin-bottom: 302px;
 }
 
 .mobile__nav-item:not(:last-child) {
@@ -50,24 +49,22 @@
   color: $accent-color;
 }
 
-.mobile__contacts-list {
-  margin-bottom: 64px;
-}
-.mobile__contacts-item:not(:last-child) {
-  margin-bottom: 32px;
+.mobile__contacts {
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .mobile__contacts-phone {
-  font-style: normal;
-  font-weight: 500;
+  display: block;
+  margin-bottom: 32px;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $accent-color;
 }
 .mobile__contacts-email {
-  font-style: normal;
-  font-weight: 500;
+  display: block;
+  margin-bottom: 64px;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
