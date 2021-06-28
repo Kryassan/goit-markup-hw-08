@@ -8,11 +8,13 @@
   .header__contacts-list {
     display: flex;
     flex-direction: column;
+    min-width: 138px;
   }
 
   .header__contacts-item:first-child {
     order: 2;
     margin-top: 10px;
+    justify-content: space-between;
   }
 
   .header__contacts-icon {
@@ -21,6 +23,7 @@
 
   .header__contacts-phone,
   .header__contacts-email {
+    display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -53,5 +56,6 @@
   .header__contacts-email {
     font-size: 14px;
     line-height: 1.14;
+    align-items: center;
   }
 }

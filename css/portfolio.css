@@ -70,13 +70,18 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: 60px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  min-height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -105,16 +110,26 @@ p {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
+
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -125,13 +140,9 @@ p {
 
 @media screen and (min-width: 768px) {
   .header__menu {
-    min-width: 516px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header__menu {
-    min-width: 906px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -151,6 +162,7 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 38px;
+    margin-right: 83px;
   }
   .header__nav-item {
     margin: 0;
@@ -212,18 +224,25 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-width: 138px;
   }
   .header__contacts-item:first-child {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     margin-top: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header__contacts-icon {
     margin-right: 8px;
   }
   .header__contacts-phone,
   .header__contacts-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -261,6 +280,9 @@ p {
   .header__contacts-email {
     font-size: 14px;
     line-height: 1.14;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
